@@ -13,7 +13,6 @@ nav {
 }
 
 .li-font {
-    /* font-size: 12px; */
     color: grey;
 }
 
@@ -46,7 +45,6 @@ nav {
 }
 .section-2 h1{
     color: white;
-    /* font-size: 170%; */
 }
 
 .sec2-row{
@@ -59,9 +57,6 @@ nav {
 
 .sec3-row{
     bottom: 20px;
-}
-.sec3-row h1{
-    /* font-size: 60px; */
 }
 
 .sec3-row p{
@@ -76,13 +71,9 @@ nav {
     margin-bottom: 20px;
 }
 
-
-
-
 .footer {
     background-color: #f5f5f7;
     padding: 20px 0;
-    /* font-size: 14px; */
     color: #6e6e73;
 }
 .footer a {
