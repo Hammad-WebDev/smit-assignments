@@ -5,39 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        body {
-            background-color: rgb(167, 160, 160);
-            display: flex;
-            justify-content: center;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            row-gap: 7px;
-            margin-top: 40px;
-            text-transform: capitalize;
-        }
-
-        .links a {
-            color: darkblue;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="links">
-        <a href="./relative linking/index.html">relative linking page</a>
-        <a href="./periodic table/index.html">periodic table</a>
-        <a href="./abc book/index.html">abc book</a>
-        <a href="./sunzine image gallery/index.html">sunzine image gallery</a>
-        <a href="./color palette/index.html">color palette</a>
-        <a href="./salt'n peper clone/index.html">salt'n peper clone</a>
-        <a href="./apple clone/index.html">apple clone</a>
-        <a href="./gmail clone/index.html">gmail clone</a>
+    <div class="container">
+        <marquee direction="right">
+            <h1 class="main-h">My SMIT Projects</h1>
+        </marquee>
+
+        <div class="cards">
+            <div class="card">
+                <a data-aos="fade-right" href="./periodic table/index.html">
+                    <div class="img">
+                        <img src="./images/pro-1.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Periodic Table</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card">
+                <a data-aos="zoom-out" href="./abc book/index.html">
+                    <div class="img">
+                        <img src="./images/pro-2.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>ABC Book</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a data-aos="fade-left" href="./sunzine image gallery/index.html">
+                    <div class="img">
+                        <img src="./images/pro-3.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Sunzine Clone</h3>
+                    </div>
+            </div>
+
+            </a>
+
+            <div class="card">
+                <a data-aos="fade-right" href="./color palette/index.html">
+                    <div class="img">
+                        <img src="./images/pro-4.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Color Palette</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a data-aos="zoom-out" href="./salt'n peper clone/index.html">
+                    <div class="img">
+                        <img src="./images/pro-5.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Salt'n Peper Clone</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a data-aos="fade-left" href="./apple clone/index.html">
+                    <div class="img">
+                        <img src="./images/pro-6.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Apple Clone</h3>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="card">
+                <a data-aos="fade-right" href="./gmail clone/index.html">
+                    <div class="img">
+                        <img src="./images/pro-7.png" alt="">
+                    </div>
+                    <div class="heading">
+                        <h3>Gmail Clone</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
     </div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
