@@ -5,7 +5,7 @@
 }
 
 .container {
-    background: url("/assets/desert.jpg") no-repeat center center / cover;
+    background: url("./assets/desert.jpg") no-repeat center center / cover;
     display: flex;
     justify-content: center;
     align-items: center;
