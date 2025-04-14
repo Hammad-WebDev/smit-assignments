@@ -90,3 +90,19 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width: 1450px) {
+    .card{
+        height: 30rem;
+        font-size: 30px;
+    }
+
+    .card img{
+        height: 20rem;
+    }
+
+    .heading{
+        margin-top: 40px;
+    }
+    
+}
