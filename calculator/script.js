@@ -1,7 +1,7 @@
 var input = document.getElementById("input");
 
 function cal(val) {
-    if (val === "=") {
+    if (val === "=" && input.value) {
         input.value = eval(input.value);
     }
     else if (val === "CE") {
@@ -10,7 +10,7 @@ function cal(val) {
     else if (val === "AC") {
         input.value = '';
     }
-    else {
+    else if(val !== "=") {
         input.value += val
     }
 }
