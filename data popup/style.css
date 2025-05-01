@@ -44,6 +44,7 @@ h1{
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     transition-duration: .5s;
 }
 
@@ -56,6 +57,7 @@ h1{
     line-height: 27px;
     font-size: 20px;
     padding: 15px 23px;
+    border-radius: 23px;
     overflow: auto;
     scrollbar-width: none;
 }   
@@ -66,6 +68,8 @@ h1{
     font-size: 23px;
     font-weight: bold;
     cursor: pointer;
+    user-select: none;
+    height: 0;
 }
 
 @media screen and (min-width: 1430px) and (max-width: 3000px) {
