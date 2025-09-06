@@ -1,0 +1,1 @@
+Hosted link: https://basics-projects.netlify.app/
