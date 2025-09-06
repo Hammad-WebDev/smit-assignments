@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    background-color: white;
+}
+
+nav>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav>h4 {
+    color: white;
+    background-color: black;
+    width: 270px;
+    height: 36px;
+    place-content: center;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav>span {
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: calc(100dvh - 100px);
+    padding: 0 10px;
+    justify-content: center;
+}
+
+.box {
+    width: 19%;
+    height: 25%;
+    position: relative;
+    cursor: pointer;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box>span {
+    position: absolute;
+    bottom: 5px;
+    right: 7px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.onlyhover {
+    opacity: 0;
+    position: absolute;
+    border: 1px solid wheat;
+    border-radius: 3px;
+    color: white;
+    padding: 3% 7%;
+    transition-duration: .3s;
+}
+
+.box:hover {
+    .onlyhover {
+        opacity: 1;
+    }
+}
+
+
+footer {
+    color: black;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .box>span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    nav>a>span, nav>span {
+        display: none;
+    }
+    nav>a{
+        position: absolute;
+        font-size: 25px;
+        left: 30px;
+    }
+    nav {
+        justify-content: center;
+    }
+}

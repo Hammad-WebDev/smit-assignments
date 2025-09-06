@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.leftSide {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.rightSide {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    font-size: 18px;
+}
+
+.rightSide>ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin-right: 30px;
+    color: #b7b7b7;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: normal;
+    font-family: "Aldrich", serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    line-height: 35px;
+    margin-top: 165px;
+    margin-bottom: 80px;
+}
+
+.heading>h1 {
+    text-align: center;
+    width: 62rem;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 57.6px;
+    font-family: "Aldrich", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list{
+    margin-bottom: 40px;
+}
+.list>ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: #b7b7b7;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: normal;
+    font-family: "Aldrich", serif;
+    margin-bottom: 30px;
+}
+
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.images>img {
+    width: 330px;;
+    height: 250px;
+}
+
+
+footer {
+    background-color: rgb(44, 42, 42);
+    margin-top: 30px;
+    padding: 0px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.footerLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.footerheading {
+    width: 85%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #b7b7b7;
+}
+
+footer span {
+    font-weight: 600;
+    color: white;
+}
+
+.heart {
+    color: red;
+}
+
+.footerRight {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* //MEDIA QUERRY */
+
+@media screen and (max-width: 768px) {
+
+    .heading{
+        display: none;
+    }
+    .rightSide ul{
+        display: none;
+    }
+    .list{
+        display: none;
+    }
+
+    .images {
+        padding: 5px;
+        margin-top: 80px;
+    }
+
+    .images>img {
+        flex-grow: 1;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 23px 0px;
+    }
+}

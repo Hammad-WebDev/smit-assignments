@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html">Go Back</a>
+
+        <center>
+            <h1>Student Registration Form</h1>
+        </center>
+    </header>
+
+    <form action="">
+        <h3>Student Name</h3>
+        <input type="text" required name="firstName" id="firstName" placeholder="First Name"><br><br>
+        <input type="text" required name="middleName" id="middleName" placeholder="Middle Name"><br><br>
+        <input type="text" required name="lastName" id="lastName" placeholder="Last Name">
+
+        <h3>Birth Date</h3>
+        <input type="date" required name="dob">
+
+        <h3>Gender</h3>
+        <input type="radio" required value="male" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" required value="female" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" required value="other" name="gender" id="other">
+        <label for="other">Other</label>
+
+        <h3>Address</h3>
+        <textarea required name="address" cols="30" rows="3"></textarea>
+
+        <h3>Email</h3>
+        <input required name="email" type="email">
+
+        <h3>Phone Number</h3>
+        <input required name="number" type="number">
+
+        <h3>Course</h3>
+        <select required name="course">
+            <option value="gra-des">Graphic Designing</option>
+            <option value="deg-mark">Digital Marketing</option>
+            <option selected value="web-dev">Web Devlopment</option>
+            <option value="cit">CIT</option>
+            <option value="dit">DIT</option>
+        </select>
+
+        <h3>Additional Comment</h3>
+        <textarea name="additionalComment" cols="60" rows="8"></textarea>
+
+        <br><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+
+</html>
