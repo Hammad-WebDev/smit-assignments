@@ -20,7 +20,7 @@ mongoose.connect(db_url).then(() => {
 app.use('/products', productRoutes);
 
 app.get('/', (req, res) => {
-    res.send('abc')
+    res.redirect('/products')
 })
 
 
